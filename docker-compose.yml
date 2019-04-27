@@ -80,6 +80,7 @@ services:
           - INSTALL_IMAGE_OPTIMIZERS=${NODE_INSTALL_IMAGE_OPTIMIZERS}
           - INSTALL_IMAGEMAGICK=${NODE_INSTALL_IMAGEMAGICK}
           - NPM_START_SCRIPT=${NODE_NPM_START_SCRIPT}
+          - BOT_TOKEN=${BOT_TOKEN}
       volumes:
         - ${APP_CODE_PATH_HOST}:${APP_CODE_PATH_CONTAINER}
       expose:
@@ -152,8 +153,8 @@ services:
         - ./data/certbot/certs/:/var/certs
         - ./certbot/letsencrypt/:${APP_CODE_PATH_CONTAINER}/letsencrypt
       environment:
-        - CN="fake.domain.com"
-        - EMAIL="fake.email@gmail.com"
+        - CN="${CN}"
+        - EMAIL="${EMAIL}"
       networks:
         - frontend
 

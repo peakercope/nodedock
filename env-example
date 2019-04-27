@@ -96,6 +96,7 @@ NODE_PG_CLIENT=false
 NODE_INSTALL_YARN=true
 NODE_YARN_VERSION=latest
 NODE_NPM_START_SCRIPT=start
+BOT_TOKEN=
 
 ### NGINX #################################################
 
@@ -105,6 +106,10 @@ NGINX_HOST_LOG_PATH=./logs/nginx/
 NGINX_SITES_PATH=./nginx/sites/
 NGINX_NODE_UPSTREAM_CONTAINER=node
 NGINX_NODE_UPSTREAM_PORT=9000
+
+### CERTBOT ###############################################
+CN=exit.by
+EMAIL=peakercope@gmail.com
 
 ### MYSQL #################################################
 
