@@ -154,7 +154,7 @@ services:
         - ./certbot/letsencrypt/:/var/www/letsencrypt
       environment:
         - CN=${CN}
-        - EMAIL="${EMAIL}"
+        - EMAIL=${EMAIL}
       networks:
         - frontend
 
