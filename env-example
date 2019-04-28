@@ -108,8 +108,9 @@ NGINX_NODE_UPSTREAM_CONTAINER=node
 NGINX_NODE_UPSTREAM_PORT=9000
 
 ### CERTBOT ###############################################
-CN=exit.by
-EMAIL=peakercope@gmail.com
+
+CN=fake.domain.com
+EMAIL=fake.email@gmail.com
 
 ### MYSQL #################################################
 
